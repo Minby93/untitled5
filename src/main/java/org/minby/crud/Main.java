@@ -12,16 +12,19 @@ public class Main {
             array[i] = Math.random();
         }
 
-        double max = array[0];
+        /*double max = array[0];
         double min = array[0];
-        double avg = 0;
+        double avg = 0;*/
 
+        //print unsorted array
         for(int i = 0; i <= arraySize; i++){
             System.out.print(array[i] + " ");
         }
         System.out.println();
+
         boolean swapped;
         double temp;
+        //sort (пузырёк)
         do{
             swapped = false;
             for (int i = 0; i < arraySize; i++){
@@ -34,6 +37,7 @@ public class Main {
             }
             arraySize--;
         }while (swapped);
+        //print sorted array
         for(int i = 0; i <= arraySize; i++){
             System.out.print(array[i] + " ");
         }
